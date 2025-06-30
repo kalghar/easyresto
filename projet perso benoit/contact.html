@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - EasyResto</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="js/manager.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body class="contact-bg">
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" aria-label="Retour à l'accueil EasyResto">
+        <img src="images/logo.png" alt="Logo EasyResto, retour à l'accueil" />
+      </a>
+    </div>
+    <div class="burger" id="burger" aria-label="Ouvrir le menu de navigation" tabindex="0" role="button"> 
+      ☰
+    </div>
+    <nav class="nav-links">
+      <a href="index.html#formules">Formules</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html#about">Qui sommes-nous</a>
+    </nav>
+    <div class="login-icon" id="openLogin" aria-label="Connexion" tabindex="0" role="button">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+  <section id="contact" class="contact contact-overlay">
+    <h2>Contactez-nous</h2>
+    <p class="contact-intro">
+      Une question, un projet, un besoin d'accompagnement pour la création ou l'évolution de votre site de restaurant ? L'équipe EasyResto est à votre écoute !<br><br>
+      N'hésitez pas à nous écrire !
+    </p>
+    <form>
+      <input type="text" placeholder="Nom" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 EasyResto. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>

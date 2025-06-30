@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyResto - Création de sites pour restaurateurs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="js/manager.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+
+  <!-- Navbar sticky -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo EasyResto, retour à l'accueil" />
+    </div>
+    <div class="burger" id="burger" aria-label="Ouvrir le menu de navigation" tabindex="0" role="button"> 
+      ☰
+    </div>
+    <nav class="nav-links">
+      <a href="#formules">Formules</a>
+      <a href="#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="#about">Qui sommes-nous</a>
+    </nav>
+    <div class="login-icon" id="openLogin" aria-label="Connexion" tabindex="0" role="button">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+
+  <!-- Modal login -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">×</span>
+      <h2>Connexion</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Header principal -->
+  <section class="hero">
+    <img src="images/header.jpg" alt="Header EasyResto" />
+    <div class="hero-text">
+      <h1>Votre site clé en main pour votre fast food</h1>
+      <p>Simple, rapide, efficace avec EasyResto.</p>
+    </div>
+  </section>
+
+  <!-- Nos formules -->
+  <section id="formules" class="formules">
+    <div class="formule" tabindex="0" role="button" aria-label="Voir l'image de la formule Starter">
+      <h3>Formule Starter</h3>
+      <p>Site vitrine simple</p>
+      <ul>
+        <li>Accueil + Menu simple ✅</li>
+        <li>Menu interactif ❌</li>
+        <li>Commande en ligne ❌</li>
+        <li>Paiement en ligne ❌</li>
+        <li>Google Maps ✅</li>
+        <li>Galerie photo ❌</li>
+        <li>Blog / actus ❌</li>
+        <li>Avis clients ❌</li>
+        <li>Statistiques ❌</li>
+        <li>CRM simplifié ❌</li>
+        <li>Coupons / promos ❌</li>
+        <li>Gestion horaires avancée ❌</li>
+        <li>Multi-utilisateur ❌</li>
+        <li>Back-office complet ❌</li>
+        <li>Comptes clients ❌</li>
+      </ul>
+      <p class="prix">99€</p>
+      <button>Choisir cette formule</button>
+    </div>
+    <div class="formule" tabindex="0" role="button" aria-label="Voir l'image de la formule Classique">
+      <h3>Formule Classique</h3>
+      <p>Site évolué avec menu dynamique</p>
+      <ul>
+        <li>Accueil + Menu simple ✅</li>
+        <li>Menu interactif ✅</li>
+        <li>Commande en ligne ❌</li>
+        <li>Paiement en ligne ❌</li>
+        <li>Google Maps ✅</li>
+        <li>Galerie photo ✅</li>
+        <li>Blog / actus ✅</li>
+        <li>Avis clients ✅</li>
+        <li>Statistiques ❌</li>
+        <li>CRM simplifié ❌</li>
+        <li>Coupons / promos ❌</li>
+        <li>Gestion horaires avancée ❌</li>
+        <li>Multi-utilisateur ❌</li>
+        <li>Back-office complet ❌</li>
+        <li>Comptes clients ✅ (simple)</li>
+      </ul>
+      <p class="prix">249€</p>
+      <button>Choisir cette formule</button>
+    </div>
+    <div class="formule" tabindex="0" role="button" aria-label="Voir l'image de la formule Premium">
+      <h3>Formule Premium</h3>
+      <p>Site complet avec commande en ligne</p>
+      <ul>
+        <li>Accueil + Menu simple ✅</li>
+        <li>Menu interactif ✅</li>
+        <li>Commande en ligne ✅</li>
+        <li>Paiement en ligne ✅</li>
+        <li>Google Maps ✅</li>
+        <li>Galerie photo ✅</li>
+        <li>Blog / actus ✅</li>
+        <li>Avis clients ✅</li>
+        <li>Statistiques ✅</li>
+        <li>CRM simplifié ✅</li>
+        <li>Coupons / promos ✅</li>
+        <li>Gestion horaires avancée ✅</li>
+        <li>Multi-utilisateur ✅</li>
+        <li>Back-office complet ✅</li>
+        <li>Comptes clients ✅ (complet)</li>
+      </ul>
+      <p class="prix">499€</p>
+      <button>Choisir cette formule</button>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-columns">
+      <div class="faq-col">
+        <details>
+          <summary>Comment commander un site ?</summary>
+          <p>Il suffit de choisir une formule et de cliquer sur le bouton "Commander".</p>
+        </details>
+        <details>
+          <summary>Est-ce que je peux modifier mon site moi-même ?</summary>
+          <p>Oui, une interface simple vous permet de mettre à jour vos informations.</p>
+        </details>
+        <details>
+          <summary>Combien de temps pour la livraison ?</summary>
+          <p>En général entre 3 et 5 jours ouvrés selon la formule choisie.</p>
+        </details>
+      </div>
+      <div class="faq-col">
+        <details>
+          <summary>Le site est-il optimisé pour les mobiles ?</summary>
+          <p>Oui, tous nos sites sont conçus pour être parfaitement responsives et s'adapter à tous les écrans (smartphone, tablette, ordinateur).</p>
+        </details>
+        <details>
+          <summary>Pouvez-vous intégrer un module de réservation ?</summary>
+          <p>Bien sûr ! Nous pouvons intégrer un module de réservation en ligne adapté à votre activité, sur demande.</p>
+        </details>
+        <details>
+          <summary>Comment se passe le support après la mise en ligne ?</summary>
+          <p>Nous restons disponibles pour toute question ou modification après la mise en ligne, avec un support réactif par email.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qui sommes-nous -->
+  <section id="about" class="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p>EasyResto est une équipe de développeurs web spécialisée dans les solutions digitales pour les restaurateurs.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EasyResto. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Modal image formule -->
+  <div class="modal" id="formuleModal" aria-modal="true" role="dialog">
+    <div class="modal-content" style="max-width: 500px; text-align: center;">
+      <span class="close" id="closeFormuleModal" tabindex="0" role="button" aria-label="Fermer l'aperçu">×</span>
+      <h2 id="formuleModalTitle"></h2>
+      <img id="formuleModalImg" src="" alt="Aperçu de la formule" style="max-width: 100%; height: auto; border-radius: 10px; margin: 1rem auto;" />
+    </div>
+  </div>
+
+</body>
+</html>
