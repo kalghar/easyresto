@@ -1,0 +1,53 @@
+{
+  "site": {
+    "name": "EasyResto",
+    "description": "Création de sites web pour restaurateurs",
+    "version": "1.0.0",
+    "author": "EasyResto Team",
+    "language": "fr"
+  },
+  "contact": {
+    "email": "contact@easyresto.fr",
+    "phone": "+33 1 23 45 67 89",
+    "address": "123 Rue de la Gastronomie, 75001 Paris",
+    "social": {
+      "facebook": "https://facebook.com/easyresto",
+      "instagram": "https://instagram.com/easyresto",
+      "linkedin": "https://linkedin.com/company/easyresto"
+    }
+  },
+  "colors": {
+    "primary": "#d35400",
+    "dark": "#2c3e50",
+    "light": "#ecf0f1",
+    "white": "#fff",
+    "success": "#27ae60"
+  },
+  "features": {
+    "slider": {
+      "autoPlay": true,
+      "interval": 5000,
+      "pauseOnHover": true
+    },
+    "modal": {
+      "animation": true,
+      "backdropClose": true,
+      "escapeClose": true
+    },
+    "form": {
+      "validation": true,
+      "autoSave": true
+    }
+  },
+  "seo": {
+    "title": "EasyResto - Création de sites pour restaurateurs",
+    "description": "Sites web clé en main pour restaurateurs. Simple, rapide, efficace avec EasyResto.",
+    "keywords": "site web restaurant, création site restaurant, développement web, restauration, digital",
+    "ogImage": "images/logo.png"
+  },
+  "performance": {
+    "lazyLoading": true,
+    "imageOptimization": true,
+    "minification": false
+  }
+}

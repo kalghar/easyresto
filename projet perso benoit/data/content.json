@@ -1,0 +1,178 @@
+{
+  "formules": [
+    {
+      "id": "starter",
+      "name": "Formule Starter",
+      "description": "Site vitrine simple à personnaliser",
+      "price": 99,
+      "currency": "€",
+      "image": "images/starter.png",
+      "features": [
+        { "name": "Accueil + Présentation + Menu simple", "included": true },
+        { "name": "Menu interactif", "included": false },
+        { "name": "Commande en ligne", "included": false },
+        { "name": "Paiement en ligne", "included": false },
+        { "name": "Google Maps", "included": true },
+        { "name": "Galerie photo", "included": false },
+        { "name": "Blog / actus", "included": false },
+        { "name": "Avis clients", "included": false },
+        { "name": "Statistiques", "included": false },
+        { "name": "CRM simplifié", "included": false },
+        { "name": "Coupons / promos", "included": false },
+        { "name": "Gestion horaires avancée", "included": false },
+        { "name": "Multi-utilisateur", "included": false },
+        { "name": "Back-office complet", "included": false },
+        { "name": "Comptes clients", "included": false }
+      ]
+    },
+    {
+      "id": "classique",
+      "name": "Formule Classique",
+      "description": "Site évolué à personnaliser",
+      "price": 249,
+      "currency": "€",
+      "image": "images/classique.png",
+      "features": [
+        { "name": "Accueil + Présentation + Menu simple", "included": true },
+        { "name": "Menu interactif", "included": true },
+        { "name": "Commande en ligne", "included": false },
+        { "name": "Paiement en ligne", "included": false },
+        { "name": "Google Maps", "included": true },
+        { "name": "Galerie photo", "included": true },
+        { "name": "Blog / actus", "included": true },
+        { "name": "Avis clients", "included": true },
+        { "name": "Statistiques", "included": false },
+        { "name": "CRM simplifié", "included": false },
+        { "name": "Coupons / promos", "included": false },
+        { "name": "Gestion horaires avancée", "included": false },
+        { "name": "Multi-utilisateur", "included": false },
+        { "name": "Back-office complet", "included": false },
+        { "name": "Comptes clients (simple)", "included": true }
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Formule Premium",
+      "description": "Site complet à personnaliser",
+      "price": 499,
+      "currency": "€",
+      "image": "images/premium.png",
+      "features": [
+        { "name": "Accueil + Présentation + Menu simple", "included": true },
+        { "name": "Menu interactif", "included": true },
+        { "name": "Commande en ligne", "included": true },
+        { "name": "Paiement en ligne", "included": true },
+        { "name": "Google Maps", "included": true },
+        { "name": "Galerie photo", "included": true },
+        { "name": "Blog / actus", "included": true },
+        { "name": "Avis clients", "included": true },
+        { "name": "Statistiques", "included": true },
+        { "name": "CRM simplifié", "included": true },
+        { "name": "Coupons / promos", "included": true },
+        { "name": "Gestion horaires avancée", "included": true },
+        { "name": "Multi-utilisateur", "included": true },
+        { "name": "Back-office complet", "included": true },
+        { "name": "Comptes clients (complet)", "included": true }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "name": "Création de Sites Web",
+      "description": "Nous créons des sites web modernes et responsives spécialement conçus pour les restaurateurs.",
+      "icon": "fa-laptop-code",
+      "features": [
+        "Design personnalisé selon votre identité",
+        "Interface intuitive et moderne",
+        "Optimisation SEO de base",
+        "Intégration des réseaux sociaux"
+      ]
+    },
+    {
+      "id": "mobile",
+      "name": "Applications Mobiles",
+      "description": "Transformez votre site en application mobile pour offrir une expérience utilisateur optimale.",
+      "icon": "fa-mobile-screen",
+      "features": [
+        "Application native iOS et Android",
+        "Notifications push pour les promotions",
+        "Géolocalisation et itinéraires",
+        "Mode hors ligne"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-commerce & Commandes",
+      "description": "Système complet de commande en ligne avec paiement sécurisé et gestion des stocks.",
+      "icon": "fa-shopping-cart",
+      "features": [
+        "Paiement en ligne sécurisé",
+        "Gestion des stocks automatique",
+        "Suivi des commandes en temps réel",
+        "Intégration avec les services de livraison"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Comment ça marche ?",
+      "answer": "Choisissez une formule, personnalisez-la (textes, images, couleurs, menu…), puis publiez-la en ligne en quelques clics."
+    },
+    {
+      "question": "Ai-je besoin de compétences techniques ?",
+      "answer": "Non, tout se fait via une interface simple et intuitive. Aucun code à écrire."
+    },
+    {
+      "question": "Puis-je modifier mon site plus tard ?",
+      "answer": "Oui, vous pouvez revenir à tout moment pour modifier votre formule et republier votre site."
+    },
+    {
+      "question": "Les formules sont-elles adaptées au mobile ?",
+      "answer": "Oui, toutes nos formules sont responsives et s'adaptent à tous les écrans (smartphone, tablette, ordinateur)."
+    },
+    {
+      "question": "Puis-je ajouter la commande ou la réservation en ligne ?",
+      "answer": "Oui, ces fonctionnalités sont incluses dans la Formule Premium. Il suffit de choisir cette formule et de l'activer lors de la personnalisation."
+    },
+    {
+      "question": "Comment obtenir de l'aide ?",
+      "answer": "Une documentation et un support sont disponibles dans votre espace utilisateur pour vous accompagner à chaque étape."
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Consultation",
+      "description": "Nous analysons vos besoins et définissons ensemble les fonctionnalités nécessaires pour votre projet."
+    },
+    {
+      "step": 2,
+      "title": "Design",
+      "description": "Création de maquettes personnalisées selon votre identité et vos préférences."
+    },
+    {
+      "step": 3,
+      "title": "Développement",
+      "description": "Développement du site avec les technologies les plus récentes et optimisé pour tous les appareils."
+    },
+    {
+      "step": 4,
+      "title": "Tests & Validation",
+      "description": "Tests complets et validation avec vous avant la mise en ligne."
+    },
+    {
+      "step": 5,
+      "title": "Mise en ligne",
+      "description": "Déploiement de votre site et formation à l'utilisation de votre interface d'administration."
+    }
+  ],
+  "technologies": [
+    { "name": "HTML5", "icon": "fa-html5" },
+    { "name": "CSS3", "icon": "fa-css3-alt" },
+    { "name": "JavaScript", "icon": "fa-js" },
+    { "name": "React", "icon": "fa-react" },
+    { "name": "Node.js", "icon": "fa-node-js" },
+    { "name": "MongoDB", "icon": "fa-database" }
+  ]
+}

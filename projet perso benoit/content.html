@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez EasyResto, la plateforme de création de sites web pour restaurateurs rapides : formules personnalisables, gestion autonome, responsive et optimisé SEO." />
+  <meta property="og:title" content="Qui sommes-nous - EasyResto Formules" />
+  <meta property="og:description" content="Découvrez EasyResto, la solution web clé en main pour fast-foods, snacks et food trucks. Simplicité, rapidité, autonomie et référencement optimal." />
+  <meta property="og:image" content="images/header.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://easyresto.fr/content.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qui sommes-nous - EasyResto Formules" />
+  <meta name="twitter:description" content="Découvrez EasyResto, la solution web clé en main pour fast-foods, snacks et food trucks. Simplicité, rapidité, autonomie et référencement optimal." />
+  <meta name="twitter:image" content="images/header.jpg" />
+  <title>Qui sommes-nous - EasyResto Formules</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="js/utilities.js"></script>
+  <script src="js/manager.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+
+  <!-- Navbar sticky -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo EasyResto, retour à l'accueil" />
+      </a>
+    </div>
+    <div class="burger" id="burger" aria-label="Ouvrir le menu de navigation" tabindex="0" role="button"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html#formules">Formules</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="#about">Qui sommes-nous</a>
+    </nav>
+    <div class="login-icon" id="openLogin" aria-label="Espace utilisateur" tabindex="0" role="button">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+
+  <!-- Modal login -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">×</span>
+      <h2>Espace utilisateur</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">Se connecter</button>
+      </form>
+      <p class="login-modal-desc">Accédez à vos formules, personnalisez-les et publiez-les en toute autonomie.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Header principal -->
+    <section class="hero fade-in">
+      <img src="images/header.jpg" alt="Photo d'accueil EasyResto, site pour restaurateurs rapides" loading="lazy" />
+      <div class="hero-text">
+        <h1>À propos d'EasyResto Formules</h1>
+        <p>La plateforme de formules web pour restaurateurs rapides, 100% personnalisables et accessibles à tous.</p>
+      </div>
+    </section>
+
+    <!-- Services détaillés -->
+    <section class="services-detail fade-in">
+      <h2>Ce que vous pouvez faire avec nos formules</h2>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-palette"></i>
+        </div>
+        <h3>Personnalisation facile</h3>
+        <p>Modifiez les couleurs, les polices, le logo, les images et les textes de votre formule en quelques clics, sans aucune compétence technique.</p>
+        <ul>
+          <li>Interface intuitive</li>
+          <li>Prévisualisation en temps réel</li>
+          <li>Ajout de pages, sections, galeries</li>
+          <li>Gestion du menu et des horaires</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <h3>Fonctionnalités adaptées à la restauration rapide</h3>
+        <p>Nos formules intègrent tout ce dont un fast-food, snack ou food truck a besoin pour se démarquer en ligne.</p>
+        <ul>
+          <li>Menu interactif</li>
+          <li>Commande et réservation en ligne (selon formule)</li>
+          <li>Google Maps intégré</li>
+          <li>Galerie photos, avis clients, blog</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <h3>Responsive & mobile-first</h3>
+        <p>Toutes nos formules sont conçues pour s'adapter parfaitement à tous les écrans : smartphone, tablette, ordinateur.</p>
+        <ul>
+          <li>Design moderne et épuré</li>
+          <li>Navigation fluide</li>
+          <li>Accessibilité renforcée</li>
+          <li>Optimisation SEO de base</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Processus de création -->
+    <section class="process fade-in">
+      <h2>Comment ça marche ?</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Choisissez une formule</h3>
+          <p>Sélectionnez la formule qui correspond à votre activité et à vos besoins parmi notre catalogue.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Personnalisez-la</h3>
+          <p>Modifiez les textes, images, couleurs, menus, horaires, etc. grâce à notre éditeur simple et intuitif.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Prévisualisez et publiez</h3>
+          <p>Visualisez le rendu final et publiez votre site en ligne en quelques clics, sans aucune compétence technique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qui sommes-nous -->
+    <section id="about" class="about fade-in">
+      <h2>Qui sommes-nous ?</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>EasyResto Formules est une plateforme dédiée aux restaurateurs rapides qui souhaitent disposer d'un site web professionnel, moderne et personnalisable, sans passer par une agence ou un développeur.</p>
+          <p>Notre mission : rendre la création de site web accessible à tous les fast-foods, snacks, food trucks et chaînes de restauration rapide, grâce à des formules pensées pour leur activité.</p>
+          <p>Nous croyons à l'autonomie, à la simplicité et à la rapidité : chaque restaurateur doit pouvoir gérer son site comme il gère sa carte !</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>150+</h3>
+            <p>Formules personnalisées</p>
+          </div>
+          <div class="stat">
+            <h3>98%</h3>
+            <p>Utilisateurs satisfaits</p>
+          </div>
+          <div class="stat">
+            <h3>5 ans</h3>
+            <p>D'expérience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EasyResto. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-links">
+      <a href="#" id="openRgpd">Mentions légales / RGPD</a>
+    </div>
+  </footer>
+
+  <!-- Modal RGPD -->
+  <div class="modal" id="rgpdModal">
+    <div class="modal-content rgpd-modal-content">
+      <span class="close" id="closeRgpd">×</span>
+      <h2>Mentions légales &amp; RGPD</h2>
+      <p>EasyResto respecte la vie privée de ses utilisateurs. Les données collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes et ne sont jamais transmises à des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression de vos données sur simple demande à contact@easyresto.fr.<br><br>Le site utilise des cookies strictement nécessaires à son fonctionnement. Pour toute question relative à la protection de vos données, contactez-nous.</p>
+    </div>
+  </div>
+
+</body>
+</html>

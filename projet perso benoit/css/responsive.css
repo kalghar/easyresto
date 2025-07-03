@@ -3,7 +3,7 @@
    =============================== */
 
 /* ===============================
-   1️⃣ - Navbar & Menu Burger
+    - Navbar & Menu Burger
    =============================== */
 
 @media (max-width: 900px) {
@@ -56,8 +56,9 @@
     height: 40px;
     cursor: pointer;
     z-index: 2002;
-    background: none;
-    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
     padding: 0;
     transition: background 0.2s;
   }
@@ -70,14 +71,25 @@
     width: 28px;
     height: 4px;
     margin: 4px 0;
-    background: var(--dark);
+    background: var(--white);
     border-radius: 2px;
     transition: all 0.3s;
+  }
+  
+  /* Animation du burger */
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 }
 
 /* ===============================
-   2️⃣ - Hero Section
+    - Hero Section
    =============================== */
 @media (max-width: 700px) {
   .hero-text {
@@ -97,7 +109,7 @@
 }
 
 /* ===============================
-   3️⃣ - Formules (Offres)
+    - Formules (Offres)
    =============================== */
 @media (max-width: 1024px) {
   .formules {
@@ -142,7 +154,7 @@
 }
 
 /* ===============================
-   4️⃣ - FAQ
+    - FAQ
    =============================== */
 @media (max-width: 600px) {
   .faq {
@@ -151,7 +163,7 @@
 }
 
 /* ===============================
-   5️⃣ - Contact & About
+    - Contact & About
    =============================== */
 @media (max-width: 600px) {
   .contact, .about {
@@ -177,7 +189,7 @@
 }
 
 /* ===============================
-   7️⃣ - Accessibilité (focus, images, boutons)
+    - Accessibilité (focus, images, boutons)
    =============================== */
 :focus {
   outline: 2.5px solid #d35400;
@@ -198,17 +210,144 @@ img, video {
     box-shadow: 0 2px 8px rgba(44,62,80,0.10);
   }
 }
-.burger {
-  transition: background 0.2s;
+
+
+/* ===============================
+   - Services Detail Page
+   =============================== */
+@media (max-width: 768px) {
+  .services-detail {
+    padding: 2rem 1rem;
+  }
+  
+  .services-detail h2 {
+    font-size: 1.8rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .service-icon i {
+    font-size: 2.5rem;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .step {
+    flex: 1 1 auto;
+  }
+  
+
 }
-.burger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+
+@media (max-width: 600px) {
+  .services-detail {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .service-card {
+    padding: 1.2rem;
+  }
+  
+  .process {
+    padding: 2rem 1rem;
+  }
+  
+  .process h2 {
+    font-size: 1.6rem;
+  }
+  
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .stat {
+    flex: 1 1 auto;
+  }
 }
-.burger.open span:nth-child(2) {
-  opacity: 0;
+
+/* ===============================
+    - Slider
+   =============================== */
+@media (max-width: 768px) {
+  .slider-section {
+    padding: 2rem 1rem;
+  }
+  
+  .slider-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .slide img {
+    height: 300px;
+  }
+  
+  .slide-content {
+    padding: 1.5rem;
+  }
+  
+  .slide-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .slide-content p {
+    font-size: 1rem;
+  }
+  
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
 }
-.burger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+
+@media (max-width: 600px) {
+  .slider-section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .slider-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .slide img {
+    height: 250px;
+  }
+  
+  .slide-content {
+    padding: 1rem;
+  }
+  
+  .slide-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .slide-content p {
+    font-size: 0.9rem;
+  }
+  
+  .slider-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .slider-btn.prev {
+    left: 10px;
+  }
+  
+  .slider-btn.next {
+    right: 10px;
+  }
 }
   
   
