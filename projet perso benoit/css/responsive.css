@@ -1,0 +1,353 @@
+/* ===============================
+   EasyResto - Responsive Design
+   =============================== */
+
+/* ===============================
+    - Navbar & Menu Burger
+   =============================== */
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: row;
+    padding: 1rem 1rem;
+  }
+  .logo img {
+    height: 32px;
+  }
+  .faq-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: #fff;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    display: none;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+    z-index: 2001;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    color: var(--dark);
+    padding: 1.2rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2002;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 0;
+    transition: background 0.2s;
+  }
+  .burger:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  .burger span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 4px 0;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  
+  /* Animation du burger */
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+/* ===============================
+    - Hero Section
+   =============================== */
+@media (max-width: 700px) {
+  .hero-text {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  .hero-text h1 {
+    font-size: 1.2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero img {
+    max-height: 220px;
+    object-fit: cover;
+  }
+}
+
+/* ===============================
+    - Formules (Offres)
+   =============================== */
+@media (max-width: 1024px) {
+  .formules {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .formule {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .formules {
+    align-items: center;
+    justify-content: center;
+  }
+  .formule {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.2rem 0.5rem;
+    font-size: 0.98rem;
+    width: 100%;
+    max-width: 350px;
+  }
+  .formule img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  button, .formule button, .contact button {
+    width: 100%;
+    min-height: 48px;
+    font-size: 1.1rem;
+  }
+  section {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/* ===============================
+    - FAQ
+   =============================== */
+@media (max-width: 600px) {
+  .faq {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+/* ===============================
+    - Contact & About
+   =============================== */
+@media (max-width: 600px) {
+  .contact, .about {
+    padding: 1.2rem 0.5rem;
+  }
+  .contact form {
+    gap: 0.7rem;
+  }
+}
+
+/* ===============================
+   6️⃣ - Footer
+   =============================== */
+@media (max-width: 600px) {
+  footer {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  footer .socials {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* ===============================
+    - Accessibilité (focus, images, boutons)
+   =============================== */
+:focus {
+  outline: 2.5px solid #d35400;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ecf0f1;
+}
+button, .nav-links a, input, textarea {
+  transition: box-shadow 0.2s, outline 0.2s, filter 0.2s, background 0.2s;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media (hover: hover) and (pointer: fine) {
+  button:hover, .nav-links a:hover {
+    filter: brightness(0.93);
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  }
+}
+
+
+/* ===============================
+   - Services Detail Page
+   =============================== */
+@media (max-width: 768px) {
+  .services-detail {
+    padding: 2rem 1rem;
+  }
+  
+  .services-detail h2 {
+    font-size: 1.8rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .service-icon i {
+    font-size: 2.5rem;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .step {
+    flex: 1 1 auto;
+  }
+  
+
+}
+
+@media (max-width: 600px) {
+  .services-detail {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .service-card {
+    padding: 1.2rem;
+  }
+  
+  .process {
+    padding: 2rem 1rem;
+  }
+  
+  .process h2 {
+    font-size: 1.6rem;
+  }
+  
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .stat {
+    flex: 1 1 auto;
+  }
+}
+
+/* ===============================
+    - Slider
+   =============================== */
+@media (max-width: 768px) {
+  .slider-section {
+    padding: 2rem 1rem;
+  }
+  
+  .slider-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .slide img {
+    height: 300px;
+  }
+  
+  .slide-content {
+    padding: 1.5rem;
+  }
+  
+  .slide-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .slide-content p {
+    font-size: 1rem;
+  }
+  
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .slider-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .slide img {
+    height: 250px;
+  }
+  
+  .slide-content {
+    padding: 1rem;
+  }
+  
+  .slide-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .slide-content p {
+    font-size: 0.9rem;
+  }
+  
+  .slider-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .slider-btn.prev {
+    left: 10px;
+  }
+  
+  .slider-btn.next {
+    right: 10px;
+  }
+}
+  
+  

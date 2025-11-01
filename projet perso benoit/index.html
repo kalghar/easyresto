@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EasyResto : créez votre site de restauration rapide en toute autonomie. Formules personnalisables, gestion simple, responsive et optimisé SEO." />
+  <meta property="og:title" content="EasyResto - Création de sites pour restaurateurs rapides" />
+  <meta property="og:description" content="EasyResto, la plateforme web pour fast-foods, snacks et food trucks. Simplicité, rapidité, autonomie et référencement optimal." />
+  <meta property="og:image" content="images/header.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://easyresto.fr/index.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EasyResto - Création de sites pour restaurateurs rapides" />
+  <meta name="twitter:description" content="EasyResto, la plateforme web pour fast-foods, snacks et food trucks. Simplicité, rapidité, autonomie et référencement optimal." />
+  <meta name="twitter:image" content="images/header.jpg" />
+  <title>EasyResto - Création de sites pour restaurateurs rapides</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="js/utilities.js"></script>
+  <script src="js/manager.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body id="top">
+
+  <!-- Navbar sticky -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#top">
+        <img src="images/logo.png" alt="Logo EasyResto, retour à l'accueil" />
+      </a>
+    </div>
+    <div class="burger" id="burger" aria-label="Ouvrir le menu de navigation" tabindex="0" role="button"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="#formules">Formules</a>
+      <a href="#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="content.html">Qui sommes-nous</a>
+    </nav>
+    <div class="login-icon" id="openLogin" aria-label="Espace utilisateur" tabindex="0" role="button">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+
+  <!-- Modal login -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">×</span>
+      <h2>Espace utilisateur</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">Se connecter</button>
+      </form>
+      <p class="login-modal-desc">Accédez à vos formules, personnalisez-les et publiez-les en toute autonomie.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Header principal -->
+    <section class="hero fade-in">
+      <img src="images/header.jpg" alt="Photo d'accueil EasyResto, site pour restaurateurs rapides" loading="lazy" />
+      <div class="hero-text">
+        <h1>Créez votre site de restauration rapide en toute autonomie</h1>
+        <p>Choisissez une formule, personnalisez-la, publiez-la. Simple, rapide, efficace.</p>
+      </div>
+    </section>
+
+    <!-- Slider des formules -->
+    <section class="slider-section fade-in">
+      <h2>Découvrez nos formules</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide active">
+            <img src="images/starter.png" alt="Aperçu Formule Starter EasyResto" loading="lazy" />
+            <div class="slide-content">
+              <h3>Formule Starter</h3>
+              <p>Site vitrine simple à personnaliser.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/classique.png" alt="Aperçu Formule Classique EasyResto" loading="lazy" />
+            <div class="slide-content">
+              <h3>Formule Classique</h3>
+              <p>Site évolué avec menu dynamique, galerie, blog, avis clients.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/premium.png" alt="Aperçu Formule Premium EasyResto" loading="lazy" />
+            <div class="slide-content">
+              <h3>Formule Premium</h3>
+              <p>Site complet avec commande en ligne, paiement, réservation.</p>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev" aria-label="Image précédente">❮</button>
+        <button class="slider-btn next" aria-label="Image suivante">❯</button>
+        <div class="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos formules -->
+    <section id="formules" class="formules fade-in">
+      <h2>Nos formules</h2>
+      <div id="formules-list"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq fade-in">
+      <h2>FAQ</h2>
+      <div id="faq-list"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EasyResto. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-links">
+      <a href="#" id="openRgpd">Mentions légales / RGPD</a>
+    </div>
+  </footer>
+
+  <!-- Modal image formule -->
+  <div class="modal" id="formuleModal" aria-modal="true" role="dialog">
+    <div class="modal-content formule-modal-content">
+      <span class="close" id="closeFormuleModal" tabindex="0" role="button" aria-label="Fermer l'aperçu">×</span>
+      <h2 id="formuleModalTitle"></h2>
+      <img id="formuleModalImg" src="" alt="Aperçu de la formule" class="formule-modal-img" />
+    </div>
+  </div>
+
+  <!-- Modal RGPD -->
+  <div class="modal" id="rgpdModal">
+    <div class="modal-content rgpd-modal-content">
+      <span class="close" id="closeRgpd">×</span>
+      <h2>Mentions légales &amp; RGPD</h2>
+      <p>EasyResto respecte la vie privée de ses utilisateurs. Les données collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes et ne sont jamais transmises à des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression de vos données sur simple demande à contact@easyresto.fr.<br><br>Le site utilise des cookies strictement nécessaires à son fonctionnement. Pour toute question relative à la protection de vos données, contactez-nous.</p>
+    </div>
+  </div>
+
+</body>
+</html>
